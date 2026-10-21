@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+
     <meta charset="UTF-8">
     <title>Sistema de Créditos</title>
     <link rel="stylesheet" href="simulador_completo.css">
+
 </head>
-
 <body>
-
     <header>
         <h1>Sistema Básico de Créditos</h1>
     </header>
-
     <nav>
         <button type="button" onclick="mostrarSeccion('parametros')">
             Parámetros
         </button>
-
         <button type="button" onclick="mostrarSeccion('clientes')">
             Clientes
         </button>
-
         <button type="button" onclick="mostrarSeccion('creditos')">
             Créditos
         </button>
@@ -36,9 +32,7 @@
             min="10"
             max="20"
             value="15"
-            placeholder="Tasa de interés"
-        >
-
+            placeholder="Tasa de interés">
         <span>%</span>
         <br>
 
@@ -50,8 +44,8 @@
     </section>
 
     <section id="clientes">
-        <h2>Registro de Clientes</h2>
 
+        <h2>Registro de Clientes</h2>
         <input type="text" id="cedula" placeholder="Cédula">
         <input type="text" id="nombre" placeholder="Nombre">
         <input type="text" id="apellido" placeholder="Apellido">
@@ -71,17 +65,15 @@
             step="any"
             placeholder="Egresos"
         >
-
         <br>
 
         <button type="button" onclick="guardarCliente()">
             Guardar cliente
         </button>
-
         <button type="button" onclick="limpiar()">
             Limpiar
         </button>
-
+        
         <table>
             <thead>
                 <tr>
@@ -102,7 +94,6 @@
         <h2>Simulación de Créditos</h2>
 
         <label for="cedulaCredito">Cédula del cliente:</label>
-
         <input
             type="text"
             id="cedulaCredito"
@@ -114,9 +105,7 @@
         </button>
 
         <div id="datosClienteCredito"></div>
-
         <h3>Datos del crédito</h3>
-
         <label for="montoCredito">Monto solicitado:</label>
 
         <input
@@ -126,19 +115,10 @@
             step="any"
             placeholder="Monto del crédito"
         >
-
         <br>
 
         <label for="plazoCredito">Plazo en meses:</label>
-
-        <input
-            type="number"
-            id="plazoCredito"
-            min="1"
-            step="1"
-            placeholder="Cantidad de meses"
-        >
-
+        <input type="number" id="plazoCredito" min="1" step="1" placeholder="Cantidad de meses">
         <br>
 
         <button type="button" onclick="calcularCredito()">
@@ -147,10 +127,7 @@
 
         <div id="resultadoCredito"></div>
     </section>
-
     <script src="utilitarios.js"></script>
     <script src="simulador_completo.js"></script>
-
 </body>
-
-</html>
+</html> 
